@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+a:hover {
+  text-decoration: none
+}
+
+body {
+  background: #58C9B9;
+  font: 16px/1 sans-serif;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: auto;
+  padding: 0;
+}
+
+#root {
+  height: 100%
+}
+
+h1 {
+  font-weight: 400;
+  color: #fff;
+  /*font-size: 20px;*/
+}
+
+h3 {
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.app {
+  white-space: nowrap;
+  height: 100%;
+}
+
+.list {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  white-space: normal;
+  height: 100%;
+  width: 280px;
+  padding: 0 20px;
+  overflow: auto;
+}
+
+.list:not(:last-child):after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 99%;
+  background: linear-gradient(to bottom, #eee 0%, #ccc 50%, #eee 100%) fixed;
+}
+
+.job-card {
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  width: 100%;
+  padding: 10px 10px 10px 15px;
+  margin: 0 0 10px 0;
+  overflow: auto;
+  border: 1px solid #e5e5df;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.25);
+}
+
+.job-card-title {
+  font-weight: bold;
+  border-bottom: solid 5px transparent;
+}
+
+.checklist-task:first-child {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: solid 1px #ddd;
+}
+
+input[type=checkbox] {
+  margin-right: 5px;
+}
+
+.checklist-task-remove:after {
+  display: inline-block;
+  color: #d66;
+  content: "x";
+  margin-left: 5px;
+}
+
+.checklist-add-task {
+  border: 1px solid #bbb;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 3px;
+}
+
+.strikethrough:checked + label {
+  text-decoration:line-through
+}

@@ -1,0 +1,40 @@
+"[
+  {
+    id: 1,
+    title: "Web Developer",
+    company: "Facebook",
+    color: '#bd8d31',
+    status: "applied",
+    tasks: [],
+    notes: []
+  },
+  {
+    id: 2,
+    title: "Front End Engineer",
+    company: "Google",
+    color: '#3a7e28',
+    status: "phone-screen",
+    tasks: [
+      {
+        id: 1,
+        name: "Schedule Phone Screen with the Recruiter",
+        done: false
+      }
+    ],
+    notes: [
+      {
+        id: 1,
+        description: "Received email from HR manager to schedule a phone screen."
+      }
+    ]
+  },
+  {
+    id: 3,
+    title: "Ruby on Rails Developer",
+    company: "Thoughtbot",
+    color: '#f33',
+    status: "tech-interview",
+    tasks: [],
+    notes: []
+  },
+]"
